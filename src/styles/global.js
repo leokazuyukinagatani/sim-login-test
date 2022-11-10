@@ -40,25 +40,38 @@ export default createGlobalStyle`
     opacity: 0;
   }
 
-  @media only screen and (max-width: 480px) {
-    html{
-      font-size: 36%;
+  
+  @media screen and (min-width:320px) and (max-width:767px){
+    html {
+      font-size: 35%;
     }
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    html{
-      font-size: 64%;
+  
+  @media screen and (min-width: 768px) and (max-width:1023px){
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  @media(min-width: 768px) and (max-width:1023px){
+    html {
+      font-size: 50%;
     }
   }
 
-
-  @media only screen and (min-width: 2560px) {
-    html{
-      font-size: 100%;
+  @media(min-width:1024px) and (max-width:2559px) {
+    html {
+      font-size: 50%;
     }
   }
 
+   
+  @media screen and (min-width:1024px) and (max-width:2559px) {
+    html {
+      font-size: 65%;
+    }
+  }
 
 
 `;
